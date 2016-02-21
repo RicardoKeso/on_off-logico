@@ -14,16 +14,16 @@ Led Indicador (Cinza) = Power_OK
 1 - Led Vermelho Fosco
 
 LED
-A em: 3K3.t1
-C em: positivo, diodo4.A
+A em: terra
+C em: 3K3.t1, 120R.t1
 
 3K3
-t1 em: led.A
-t2 em: terra
+t1 em: led.C
+t2 em: positivo (lilas)
 
 120R
-t1 em: 
-t2 em: 
+t1 em: led.C
+t2 em: diodo4.A
 
 CI
 .01 - diodo1.C
@@ -55,11 +55,11 @@ MT1 em: verde
 MT2 em: negativo
 
 Diodo1
-A em: 
+A em: ??????
 C em: .01
 
 Diodo2
-A em:
+A em: ??????
 C em: .05, .06, .11
 
 Diodo3
@@ -67,5 +67,5 @@ A em: Gate
 C em: .13
 
 Diodo4
-A em: led.C
-C em: cinza
+A em: 120R.t2
+C em: power_ok (cinza)
